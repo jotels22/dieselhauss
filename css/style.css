@@ -552,6 +552,10 @@ footer {
     .imagenes-cursos {
         height: 100%;
     }
+    /* contacto */
+    .main-contacto {
+        padding-bottom: 2em;
+    }
 }
 
 
