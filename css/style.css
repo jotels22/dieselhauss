@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:black;
+    font-family: coolvetica;   
+}
+@media screen and (min-width: 1024px){ 
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:black;
+    font-family: coolvetica;
+    width: 100%;
+   
+}
+body {
+    background-image: url(../img/imagen_2023-05-17_003336906.png);
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.2em;
+    width: 100%;
+}
+.img--logo{
+    display: flex;
+    background-color:white;
+    width: 100%;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 1em 1em 1em;
+    align-items:center;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    justify-items: center;
+    width: 100%;
+    height: 11em;
+
+}
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    font-size: 2em;
+    height: 4em;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0px 40px 0px 40px;
+    color: #333333;
+    background: none;
+    width: 100%;
+    border: solid #333333 ; 
+    border-radius: 1em;
+    text-align: center;
+    
+}
+
+a:link {
+
+    text-decoration: none;
+    background-color: white;
+
+}
+a:hover {
+   box-shadow: #333333 10px 5px 20px 1px  ;
+   border-radius: 1em;
+   font-size: larger;
+   
+}
+.img--logo {
+    width: 15em;
+}
+
+h2 {
+    margin:0rem 0px 0rem 0px;
+    font-size: 5.4rem;
+    background-color: white;
+    text-align: center;
+    
+
+}
+
+.contenedor {
+    padding: 1.3em;
+    display: grid;
+    width: 100%;
+    height: 70vh;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows: 50% 50%;
+    column-gap: 1rem;
+    align-items: center;
+    background-color: white;
+    overflow: hidden
+
+}
+.p1-div {
+
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+}
+.p1 {
+    grid-column: span 1;
+    width: 100%;
+    height:100%;
+    font-size: 1.9em;
+    color: black;        
+}
+
+.img1  {
+    width: 100% ;
+    height: 100%;
+    grid-row: span 2 ;
+    grid-column: span 1;
+    
+}
+.img2 {
+    width: 100%;
+    height: 100%;
+}
+.marcas {
+    width: 100%;
+    margin: 1.3em 0em 1.3em 0em;
+}
+.h2--2 {
+    padding: 0.66em;
+}
+
+.carousel {
+    padding: 3em;
+    padding-top: 0;
+    background-color: white;
+}
+
+.img-cinco{
+    height: 60vh;
+}
+/* cursos */
+.h2-curso{
+    font-size: 4em;
+}
+.img--curso1 {
+
+    width:100%;
+    padding-bottom: 1em;
+}
+.img--curso2 {
+    width: 100%;
+}
+
+    
+
+footer {
+    background-color: white;
+    height: 10em;
+    margin-bottom: 1em;
+}
+footer p {
+    color: white;
+    font-size: 2em;
+}
+.div-footer{
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    height: 100%;
+}
+
+.img-footer{
+    height: 10em;
+    width: 10em;
+}
+
+
+/* cursos */
+
+.imagenes-cursos {
+    display: block;
+}
+
+.img--curso1 {
+
+    width:100%;
+    padding-bottom: 1em;
+}
+.img--curso2 {
+    width: 100%;
+}
+/* fotos */
+
+.contenedor-fotos div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0.5em;
+    background-color: white;
+}
+
+.contenedor-fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: fit-content;
+    width: 100%;
+    object-fit: cover;
+}
+.contenedor-fotos .img-uno, .img-tres{
+    grid-row: span 1;
+}
+.contenedor-fotos .img-cuatro{
+    grid-column: span 3;
+}
+.contenedor-fotos .img-cinco{
+    grid-column: span 3;
+    grid-row: span 1;
+    height: 100%;
+}
+
+.contenedor-fotos .img-diez {
+
+    grid-column: span 2;
+}
+/* contacto */
+
+.main-contacto {
+    height: 80vh;
+}
+
+/* yo */
+
+.p-yo{
+    grid-row: span ;
+    font-size: 2.2em;
+    padding: 0.3em;
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-yo{
+    height: fit-content;
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width: 1024px){
+
+    body {
+        background-image: url(../img/imagen_2023-05-17_003336906.png);
+    
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        padding-top: 1.2em;
+        width: 100%;
+    }
+    .img--logo{
+        background-color:white;
+        width: 1em;
+    }
+    header nav {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between; 
+        align-content:center;
+        color: black;
+        background-color: white;
+        justify-items: center;
+        width: 100%;
+        height: 11em;
+    
+    }
+    header nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        gap:0.2em;
+        width:100%;
+        height: 100%;
+        background-color: white;
+        align-items: center;
+        font-size: 1.2em;
+        padding: 0;
+        margin: 0;
+    }
+    
+    header nav ul li {
+        display: flex;
+        list-style: none;
+        padding: 0.8em;
+        color: #333333;
+        width: 100%;
+        border: solid #333333 ; 
+        border-radius: 1em;
+        height: 1em ;
+        align-items: center;  
+        font-size: 2em;
+    }
+    
+    a:link {
+    
+        text-decoration: none;
+        background-color: white;
+    
+    }
+    a:hover {
+       box-shadow: #333333 10px 5px 20px 1px  ;
+       border-radius: 1em;
+       font-size: larger;
+       
+    }
+    .img--logo {
+        width: 15em;
+    }
+    h2 {
+        font-size: 3.4rem;
+        background-color: white;
+        text-align: center;
+        width: 100%;
+
+    }
+   
+    .contenedor {
+        padding: 1.3em;
+        display: grid;
+        width: 100%;
+        height: 70vh;
+        grid-template-columns:1.5fr 1fr;
+        grid-template-rows: 50% 50%;
+        column-gap: 1rem;
+        align-items: center;
+        background-color: white;
+        overflow: hidden
+    
+    }
+    .p1-div {
+    
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        grid-column: span 2;
+        text-align: start;
+    }
+    .p1 {
+        width: 100%;
+        height:100%;
+        font-size: 2.1em;
+        color: black;
+        text-align: start;
+            
+    }
+    
+    .img1  {
+        width: 100% ;
+        height: 100%;
+        grid-row: span 1 ;
+        grid-column: span 1;
+        padding: 0.3em;
+        
+    }
+    .img2 {
+        width: 100%;
+        height: 100%;
+        padding: 0.3em;
+    }
+    .marcas {
+        width: 100%;
+        margin: 1.3em 0em 1.3em 0em;
+    }
+    .h2--2 {
+        padding: 0.66em;
+    }
+    
+    .carousel {
+        padding: 3em;
+        background-color: white;
+    
+        
+    }
+
+    /* cursos */
+.h2-curso{
+    font-size: 3em;
+}
+.img--curso1 {
+
+    width:100%;
+    padding-bottom: 1em;
+}
+.img--curso2 {
+    width: 100%;
+}
+
+    /* fotos */
+
+.contenedor-fotos div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0.5em;
+    background-color: white;
+}
+
+.contenedor-fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: fit-content;
+    width: 100%;
+    object-fit: cover;
+}
+.contenedor-fotos .img-uno, .img-tres{
+    grid-row: span 1;
+}
+.contenedor-fotos .img-cuatro{
+    grid-column: span 3;
+}
+.contenedor-fotos .img-cinco{
+    grid-column: span 3;
+    grid-row: span 1;
+    height: 100%;
+}
+.contenedor-fotos .img-nueve{
+    display: none;
+}
+.contenedor-fotos .img-diez {
+
+    grid-column: span 3;
+    height: 25em;
+}
+/* contacto */
+
+.main-contacto {
+    padding: 1em;
+    height: 50vh;
+}
+
+    /* yo */
+
+
+    .div-footer{
+        display: flex;
+        align-items: center;
+        font-size: 1.5em;
+        height: 100%;
+        background-color: white;
+        justify-content: space-between;
+    }
+    
+    .img-footer{
+        height: 10em;
+        width: 10em;
+    }
+    /* yo */
+    .p-yo{
+        grid-row: span 1 ;
+        font-size: 2em;
+        padding: 0.3em;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .img-yo{
+        height: fit-content;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    header {
+        font-size: 0.6em;
+    }
+
+    .p1 {
+        width: 100%;
+        height:100%;
+        font-size: 1.6em;
+        color: black;
+        text-align: start;
+            
+    }
+    
+    
+    .img--logo {
+        display: none;
+    }
+    .img2 {
+        display: none;
+    }
+    .img1 {
+        grid-column: span 2 ;
+    }
+    .img-diez{
+        grid-column: span 2;
+    }
+    .h2--2 {
+        padding: 0;
+    }
+    .carousel {
+        padding: 1em;
+    }
+    .contenedor-fotos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+footer {
+    color: white;
+}
+.div-footer{
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    height: 100%;
+}
+
+.img-footer{
+    height: 7em;
+    width: 7em;
+}
+
+.p-yo {
+    font-size: 1em;
+}
+/* cursos */
+    .h2-curso{
+        font-size: 2em;
+    }
+    .img--curso1 {
+    
+        width:100%;
+        padding-bottom: 1em;
+    }
+    .img--curso2 {
+        width: 100%;
+    }
+    .imagenes-cursos {
+        height: 100%;
+    }
+}
+
+
+
+/* sobre nosotros */
+
+main {
+    background-color: white;
+    padding:0em 2em 2em 2em;
+}
+/* yo */
+
+.div-yo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(202, 202, 202);
+    padding: 0.3em;
+    border-radius: 10px;
+}
+
+.img-yo{
+    height: fit-content;
+    width: 100%;
+}
+
+footer div ul li {
+    list-style: none;
+}
+
+
+
+
