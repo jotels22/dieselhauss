@@ -502,7 +502,7 @@ h2, p {
     width: auto;
     font-size: 0.5em; }
     header .img--logo {
-      display: flex;
+      display: none;
       width: 10em;
       height: 11em; }
     header nav {
