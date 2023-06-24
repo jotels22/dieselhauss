@@ -13,7 +13,7 @@
         color:black;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
 body {
-        background-image: url(../img/imagen_2023-05-17_003336906.png);}
+        background-image: url(../img/fondocolor.png);}
 
     header {
         display: flex;
@@ -21,7 +21,6 @@ body {
         padding-top: 1.2em;
         width: 100%;
         .img--logo{
-            display: flex;
             background-color: $color-principal;
             width: 15em;}
         nav {
@@ -36,7 +35,7 @@ body {
             ul {
                 display: flex;
                 justify-content: space-evenly;
-                gap:40px;
+                gap: 0.3em;;
                 align-items: center;
                 width: 100%;
                 background-color: $color-principal;
@@ -55,8 +54,7 @@ body {
                 background-color: $color-principal;}
     a:hover {
                 box-shadow: #333333 10px 5px 20px 1px  ;
-                border-radius: 1em ;
-                font-size: 1;}
+                border-radius: 1em }
     a .img--logo:hover{
         border-radius: 0em;
         font-size: initial;
@@ -74,13 +72,12 @@ body {
         display: grid;
         padding: 1.3em;
         width: 100%;
-        height: 70vh;
+        height:fit-content;
         grid-template-columns:2fr 1fr;
         grid-template-rows: 50% 50%;
         column-gap: 1rem;
         align-items: center;
         background-color:$color-principal;
-        background-image:url(../img/fondo1.jpg);
         overflow: hidden;
         .p1-div {
             @include full;
@@ -93,7 +90,8 @@ body {
         .img1{
             @include full;
             grid-row: span 2;
-            grid-column: 1;}
+            grid-column: 1;
+            height: 30em}
         .img2{
             @include full;}}
 
@@ -106,10 +104,10 @@ body {
                 padding: 1em;
                 div{
                     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-                    background-color: #2D4263;
+                    background-color: #004e219c;
                     border-radius: 20px;}
                     div:hover{
-                    background-color: #11294d;}
+                    background-color: #008b13;}
                 .informacion{
                     height: 150px;
                     display: flex;
@@ -134,7 +132,7 @@ body {
                         font-weight: 300;
                         cursor: pointer;
                         button:hover{
-                            background-color: #2D4263;
+                            background-color: #00296b;
                         }}
                 .precio {
                     font-size: 20px;
@@ -144,9 +142,6 @@ body {
                     font-size: 17px;
                     font-weight: 300;
                     color: $color-principal;}
-            .foto-vaso{
-                height: 10em;
-            }
             .foto{
                 border-radius: 1em;
             }
@@ -156,8 +151,12 @@ body {
         margin: 1.3em 0 1.3em 0;}
     .h2--2{
         padding: 0.66em;}
-    .carousel {
-        padding: 0em 10em 5em 10em;}
+        .carousel {
+            height:40em ;}
+            .img-carousel{
+                height:40em;
+                padding: 3em;
+            }
 
     /* CURSOS*/
 
@@ -175,8 +174,8 @@ body {
 
     .contenedor-fotos {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr );
+        grid-template-rows:0.25fr 0.25fr 0.5fr;
         height: fit-content;
         width: 100%;
         object-fit: cover;
@@ -184,18 +183,21 @@ body {
             @include full;
         object-fit: cover;
         padding: 0.5em;
-        background-color: $color-principal;}
-        .img-uno, .img-tres{
-            grid-row: span 1;}
-        .img-cuatro{
-            grid-column: span 3;}
-        .img-cinco{
-            grid-column: span 3;
-            grid-row: span 1;
-            height: 100%;}
-        .img-diez {
-            grid-column: span 2;}}
-
+        background-color: $color-principal;;}
+        .img-tres{
+            grid-row: span 2;
+            height: 100%;
+        }
+        .img-seis, .img-cuatro{
+            height: 40em;
+        }
+        .img-nueve {
+            grid-column: span 2;
+        }
+        .img-ocho{
+            grid-row: span 2;
+        }
+        }
     /* CONTACTO */
 
     .main-contacto {
@@ -233,7 +235,7 @@ body {
         width: 100%;}}
 
     
-        footer {
+        footer {    
             background-color: rgb(146, 51, 51);
             height: 8em;
             margin-bottom: 1em;
@@ -248,15 +250,15 @@ body {
                 background-color: $color-principal;            
                 justify-content: space-between;}
             .img-footer{
-                height: 9em;
-                width: 12em;}
+                height: 7em;
+                width: 10em;}
             ul{
                 li{
                     justify-content: space-between;
                     list-style: none;
                     img{
-                        height: 3em;
-                        width: 3em;
+                        height: 2em;
+                        width: 2em;
                     }
                 }
             }
@@ -265,14 +267,13 @@ body {
     }
 @media screen and (max-width:1024px){
     * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            color:black;
-            font-family: coolvetica;
-            width: 100%;}
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color:black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
             body {
-                background-image: url(../img/imagen_2023-05-17_003336906.png);}
+                background-image: url(../img/fondocolor.png);}
     
     header {
         display: flex;            
@@ -280,7 +281,7 @@ body {
         padding-top: 1.2em;
         width: 100%;
         .img--logo{
-        background-color:white;
+        background-color:$color-principal;
         width: 15em;}
         nav {
             display: flex;
@@ -295,19 +296,21 @@ body {
             ul {
                 display: flex;
                 justify-content: space-evenly;
-                gap:0.2em;
+                gap:0.3em;
+                padding: 0;
                 @include full;
-                background-color: white;
+                background-color: $color-principal;
                 align-items: center;
-                font-size: 1.2em;}
+                font-size: 1em;}
                 li {
                     display: flex;
                     list-style: none;
                     padding: 0.8em;
                     color: $color-letras;
+                    background-color: $color-principal;
                     width: 100%;
                     border: solid $color-letras ; 
-                    border-radius: 1em;
+                    border-radius: 1rem;
                     height: 1em ;
                     align-items: center;  
                     font-size: 2em;}        
@@ -324,8 +327,8 @@ body {
         }
     
     h2 {
-        font-size: 3.4rem;
-        background-color: white;
+        font-size: 3rem;
+        background-color: $color-principal;
         text-align: center;
         width: 100%;}
        
@@ -333,23 +336,24 @@ body {
         padding: 1.3em;
         display: grid;
         width: 100%;
-        height: 70vh;            
+        height: fit-content;            
         grid-template-columns:1.5fr 1fr;
         grid-template-rows: 50% 50%;
-        column-gap: 1rem;
-        align-items: center;            
-        background-color: white;
+        column-gap: 1rem;     
+        background-color: $color-principal;
         overflow: hidden;
         .p1-div {  
             @include full;      
-            box-sizing: border-box;        
-            grid-column: span 2;        
+            box-sizing: border-box;       
+            grid-column: span 2;    
+            height: fit-content;   
             text-align: start;}
             .p1 {
                 @include full;
-                font-size: 2.1em;
-                color: black;
-                text-align: start;}
+                font-size: 1.4em;
+                color: $color-letras;
+                text-align: start;
+                margin: 0;}
         .img1  {
             width: 100% ;
             height: 100%;
@@ -409,14 +413,18 @@ body {
         .h2--2 {
             padding: 0.66em;}
         
-        .carousel {
-            padding: 3em;
-            background-color: $color-principal;}
+            .carousel {
+                height:30em ;}
+                .img-carousel{
+                    height:30em;
+                    padding: 2em;
+                }
+        
     
             /* CURSOS */
 
     .h2-curso{
-        font-size: 3em;}
+        font-size: 2em;}
     .img--curso1 {    
         width:100%;
         padding-bottom: 1em;}
@@ -425,37 +433,38 @@ body {
     
             /* FOTOS */
     
-    .contenedor-fotos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        height: fit-content;
-        width: 100%;
-        object-fit: cover;
-        div img {
-            @include full;
-            object-fit: cover;
-            padding: 0.5em;
-            background-color: white;}
-    .img-uno, .img-tres{
-        grid-row: span 1;}
-    .img-cuatro{
-        grid-column: span 3;}
-    .img-cinco{
-        grid-column: span 3;
-        grid-row: span 1;
-        height: 100%;}
-    .img-nueve{
-        display: none;}
-    .img-diez {    
-        grid-column: span 3;
-        height: 25em;}}
+            .contenedor-fotos {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr );
+                grid-template-rows:0.25fr 0.25fr 0.5fr;
+                height: fit-content;
+                width: 100%;
+                object-fit: cover;
+                div img {
+                    @include full;
+                object-fit: cover;
+                padding: 0.5em;
+                background-color: $color-principal;;}
+                .img-tres{
+                    grid-row: span 2;
+                    height: 100%;
+                }
+                .img-seis, .img-cuatro{
+                    height: 40em;
+                }
+                .img-nueve {
+                    grid-column: span 2;
+                }
+                .img-ocho{
+                    grid-row: span 2;
+                }
+                }
 
             /* CONTACTO */
     
     .main-contacto {
         padding: 1em;
-        height: 50vh;}
+        height: 55em;}
     
 
             /* YO */
@@ -490,57 +499,58 @@ body {
                 width: 100%;}}
 
         
-        footer {
-            background-color: rgb(146, 51, 51);
-            height: 8em;
-            margin-bottom: 1em;
-            p {
-                color: $color-principal;
-                font-size: 1em;}
-            .div-footer{
-                display: flex;            
-                align-items: center;
-                font-size: 1.5em;
-                height: 100%;
-                background-color: $color-principal;            
-                justify-content: space-between;}
-            .img-footer{
-                height: 5em;
-                width: 7em;}
-            ul{
-                li{
-                    justify-content: space-between;
-                    list-style: none;
-                    img{
-                        height: 2em;
-                        width: 2em;
+                footer {
+                    background-color: rgb(146, 51, 51);
+                    height: 8em;
+                    margin-bottom: 1em;
+                    p {
+                        color: $color-principal;
+                        font-size: 1em;}
+                    .div-footer{
+                        display: flex;            
+                        align-items: center;
+                        font-size: 1.3em;
+                        height: 100%;
+                        background-color: $color-principal;            
+                        justify-content: space-between;}
+                    .img-footer{
+                        height: 7em;
+                        width: 10em;}
+                    ul{
+                        li{
+                            justify-content: space-between;
+                            list-style: none;
+                            img{
+                                height: 2em;
+                                width: 2em;
+                            }
+                        }
                     }
-                }
+        
             }
-
-    }
     }
 @media screen and (max-width: 800px){
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            color:$color-letras;
-            font-family: coolvetica;
-            width: 100%;}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color:black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
             body {
-                background-image: url(../img/imagen_2023-05-17_003336906.png);}
+                background-image: url(../img/fondocolor.png);}
     
     header {
-        display: flex;            
+        display: flex;   
+        flex-wrap: wrap;         
         justify-content: center;
         padding-top: 1.2em;
         width: auto;
         font-size: 0.5em;;
         .img--logo{
-            display: none;
-            width: 10em;
-            height: 11em;}
+            width: 100%;
+            height: fit-content;
+            display: block;
+        }
         nav {
             display: flex;
             flex-wrap:nowrap;
@@ -554,7 +564,7 @@ body {
             ul {
                 display: flex;
                 justify-content: space-evenly;
-                gap:0.2em;
+                gap:0.3em;
                 @include full;
                 background-color: $color-principal;
                 align-items: center;
@@ -565,6 +575,7 @@ body {
                     list-style: none;
                     padding: 0.8em;
                     color: $color-letras;
+                    background-color: $color-principal;
                     width: 100%;
                     border: solid $color-letras ; 
                     border-radius: 1em;
@@ -586,7 +597,7 @@ body {
         }
     
     h2 {
-        font-size: 3.4rem;
+        font-size: 2em;
         background-color: $color-principal;
         text-align: center;
         width: 100%;}
@@ -666,16 +677,19 @@ body {
             width: 100%;
             margin: 1.3em 0 1.3em 0;}
         .h2--2 {
-            padding: 0.66em;}
+            padding: 0}
         
-        .carousel {
-            padding: 1em;
-            background-color: $color-principal;}
+            .carousel {
+                height:20em ;}
+                .img-carousel{
+                    height:20em;
+                    padding: 2em;
+                }
     
             /* CURSOS */
 
     .h2-curso{
-        font-size: 3em;}
+        font-size: 1.5em;}
     .img--curso1 {    
         width:100%;
         padding-bottom: 1em;}
@@ -684,32 +698,33 @@ body {
     
             /* FOTOS */
     
-    .contenedor-fotos {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        height: fit-content;
-        width: 100%;
-        object-fit: cover;
-        div img {
-            @include full;
-            object-fit: cover;
-            padding: 0.5em;
-            background-color: $color-principal;}
-    .img-uno, .img-tres{
-        grid-row: span 1;}
-    .img-cuatro{
-        grid-column: span 3;}
-    .img-cinco{
-        grid-column: span 3;
-        grid-row: span 1;
-        height: 100%;}
-    .img-nueve{
-        display: none;}
-    .img-diez {    
-        grid-column: span 2;
-        height: 25em;}}
-
+            .contenedor-fotos {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr );
+                grid-template-rows:0.25fr 0.25fr 0.5fr;
+                height: fit-content;
+                width: 100%;
+                object-fit: cover;
+                div img {
+                    @include full;
+                object-fit: cover;
+                padding: 0.5em;
+                background-color: $color-principal;;}
+                .img-tres{
+                    grid-row: span 2;
+                    height: 100%;
+                }
+                .img-seis, .img-cuatro{
+                    height: 40em;
+                    display: none;
+                }
+                .img-nueve {
+                    grid-column: span 2;
+                }
+                .img-ocho{
+                    grid-row: span 2;
+                }
+                }
     /* CONTACTO */
     
     .main-contacto {
@@ -750,34 +765,34 @@ body {
                 width: 100%;
                 padding: 1em;}}
 
-        footer {
-            background-color: rgb(146, 51, 51);
-            height: 8em;
-            margin-bottom: 1em;
-            p {
-                color: $color-principal;
-                font-size: 1em;}
-            .div-footer{
-                display: flex;            
-                align-items: center;
-                font-size: 1em;
-                height: 100%;
-                background-color: $color-principal;            
-                justify-content: space-between;}
-            .img-footer{
-                height: 4em;
-                width: 6em;}
-            ul{
-                li{
-                    justify-content: space-between;
-                    img{
-                        height: 1em;
-                        width: 1em;
+                footer {    
+                    height: 8em;
+                    margin-bottom: 1em;
+                    p {
+                        color: $color-principal;
+                        font-size: 1em;}
+                    .div-footer{
+                        display: flex;            
+                        align-items: center;
+                        font-size: 1em;
+                        height: 100%;
+                        background-color: $color-principal;            
+                        justify-content: space-between;}
+                    .img-footer{
+                        height: 7em;
+                        width: 10em;}
+                    ul{
+                        li{
+                            justify-content: space-between;
+                            list-style: none;
+                            img{
+                                height: 2em;
+                                width: 2em;
+                            }
+                        }
                     }
-                }
+        
             }
-
-    }
 
 
 div ul li {
@@ -785,6 +800,7 @@ div ul li {
     a {
         text-decoration: none;
         width: fit-content;
+        background-color: $color-principal;
     }
 
     h2, p{
